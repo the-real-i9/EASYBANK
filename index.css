@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Inter';
+}
+
+:root {
+  --bg-color-one: hsl(0, 0%, 100%);
+  --text-color-one: hsl(233, 8%, 62%);
+  --text-color-two: hsl(233, 26%, 24%);
+  --bg-color-two: hsl(220, 16%, 96%);
+  --bg-color: hsl(192, 70%, 51%);
+  --btn-color: hsl(136, 65%, 51%);
+  --p-font: 1.1rem;
+  --big-font: 4rem;
+  --h3-font: 1.5rem;
+  --gl-padd-right: 100px;
+  --gl-padd-left: 150px;
+  --mgl-padd-x: 30px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+a, button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  outline: none;
+  border: none;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  padding: 0 var(--gl-padd-right) 0 var(--gl-padd-left);
+  background: var(--bg-color-one);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  max-height: 20px;
+}
+
+.header-nav-desktop {
+  display: flex;
+  height: 100%;
+}
+
+.header-nav-desktop > a {
+  display: flex;
+  color: var(--text-color-one);
+  align-items: center;
+  font-size: 14px;
+  height: 100%;
+  margin: 0 15px;
+  position: relative;
+}
+
+.header-nav-desktop > a:hover {
+  color: var(--text-color-two);
+}
+
+.header-nav-desktop > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, var(--btn-color), var(--bg-color));
+  opacity: 0;
+}
+
+.header-nav-desktop > a:hover::after {
+  opacity: 1;
+}
+
+.header-cta {
+  background: linear-gradient(to right, var(--btn-color), var(--bg-color));
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--bg-color-one);
+  border-radius: 50px;
+  padding: 14px 36px;
+  /* height: 40px; */
+}
+
+.header-cta:hover {
+  opacity: 0.7;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 0 var(--mgl-padd-x);
+    height: 65px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-nav-desktop, .header-cta {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
+
+main {
+  margin-top: 80px;
+  width: 100%;
+  padding: 0 var(--gl-padd-right) 0 var(--gl-padd-left);
+}
