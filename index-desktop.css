@@ -114,10 +114,9 @@ header {
 
 main {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
+  position: relative;
 }
-
-
 
 .hero-wrapper {
   width: 100%;
@@ -129,11 +128,9 @@ main {
   padding: 130px var(--dgl-px) 200px;
   margin: 0 auto;
   margin-top: 80px;
-  position: relative;
-  overflow-y: visible;
 }
 
-.hero-container::after {
+main::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -141,6 +138,7 @@ main {
   top: 0%;
   right: -42%;
   background: 30% -50px no-repeat url(./images/image-mockups.png), 0% -190px no-repeat url("./images/bg-intro-desktop.svg");
+  /* z-index: -1; */
 }
 
 .hero-hd-text {
@@ -160,14 +158,13 @@ main {
 .services-wrapper {
   width: 100%;
   background: var(--bg-color-two);
-  position: relative;
-  z-index: 5;
 }
 
 .services-container {
   max-width: var(--sec-maxw);
   padding: 120px var(--dgl-px) 50px;
   margin: 0 auto;
+  position: relative;
 }
 
 .services-intro-hd {
@@ -212,6 +209,8 @@ main {
 .articles-section-wrapper {
   width: 100%;
   background: var(--bg-color-one);
+  position: relative;
+  z-index: 10;
 }
 
 .articles-section-container {
