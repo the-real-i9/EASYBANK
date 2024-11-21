@@ -114,8 +114,7 @@ header {
 
 main {
   width: 100%;
-  overflow: hidden;
-  position: relative;
+  overflow-x: hidden;
 }
 
 
@@ -130,9 +129,11 @@ main {
   padding: 130px var(--dgl-px) 200px;
   margin: 0 auto;
   margin-top: 80px;
+  position: relative;
+  overflow-y: visible;
 }
 
-main::after {
+.hero-container::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -159,6 +160,8 @@ main::after {
 .services-wrapper {
   width: 100%;
   background: var(--bg-color-two);
+  position: relative;
+  z-index: 5;
 }
 
 .services-container {
