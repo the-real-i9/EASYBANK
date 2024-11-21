@@ -210,7 +210,7 @@ main::after {
   width: 100%;
   background: var(--bg-color-one);
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 .articles-section-container {
