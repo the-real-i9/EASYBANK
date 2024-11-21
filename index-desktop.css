@@ -227,19 +227,21 @@ main::after {
 }
 
 .article-card {
-  width: 255px;
-  border-radius: 10px;
+  width: 250px;
+  border-radius: 7px;
   overflow: hidden;
   cursor: pointer;
 }
 
 .article-card-cover-image {
   width: 100%;
+  height: 200px;
 }
 
 .article-card-cover-image > img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
 }
 
