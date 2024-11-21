@@ -227,7 +227,7 @@ main::after {
 }
 
 .article-card {
-  width: 250px;
+  width: 255px;
   border-radius: 7px;
   overflow: hidden;
   cursor: pointer;
@@ -246,7 +246,7 @@ main::after {
 }
 
 .article-card-content {
-  padding: 20px;
+  padding: 20px 20px;
 }
 
 .article-author {
@@ -266,7 +266,7 @@ main::after {
 }
 
 .article-intro {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   color: var(--text-color-one);
 }
