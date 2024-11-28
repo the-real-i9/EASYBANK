@@ -112,6 +112,10 @@ header {
   display: none;
 }
 
+.mobile-nav-wrapper {
+  display: none;
+}
+
 main {
   width: 100%;
   overflow: hidden;
