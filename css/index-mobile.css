@@ -24,12 +24,22 @@
   }
 
   .hero-container {
-    padding: 500px var(--mgl-px) 100px;
-    margin-top: 65px;
+    padding: 350px var(--mgl-px) 100px;
   }
 
-  .hero-container::after {
-    background: center -23% / contain no-repeat url(../images/image-mockups.png),
-      center -7% / contain no-repeat url(../images/bg-intro-mobile.svg);
+  .hero-container::before {
+    background: center top / contain no-repeat url(../images/image-mockups.png),
+      center top / contain no-repeat url(../images/bg-intro-mobile.svg);
+  }
+
+  .hero-hd-text {
+    font-size: 38px;
+  }
+  
+  .hero-info-text {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 20px auto 30px;
   }
 }
