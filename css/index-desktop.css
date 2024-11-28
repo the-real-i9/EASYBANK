@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
   text-decoration: none;
   list-style: none;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 
 :root {
@@ -23,12 +23,14 @@
   --dgl-px: 25px;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
@@ -50,7 +52,7 @@ header {
 
 .header-container {
   max-width: var(--sec-maxw);
-  margin: 0 auto;  
+  margin: 0 auto;
   height: 80px;
   padding: 0 var(--dgl-px);
   display: flex;
@@ -137,8 +139,8 @@ main::after {
   position: absolute;
   top: 0%;
   right: -42%;
-  background: 30% -50px no-repeat url(./images/image-mockups.png), 0% -190px no-repeat url(./images/bg-intro-desktop.svg);
-  /* z-index: -1; */
+  background: 30% -50px no-repeat url(../images/image-mockups.png),
+    0% -190px no-repeat url(../images/bg-intro-desktop.svg);
 }
 
 .hero-hd-text {

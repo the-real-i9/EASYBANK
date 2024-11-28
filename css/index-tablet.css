@@ -21,8 +21,8 @@
     height: 100%;
     top: 0;
     right: 0;
-    background: center -165% / contain no-repeat url(./images/image-mockups.png),
-      center -35% / contain no-repeat url(./images/bg-intro-mobile.svg);
+    background: center -165% / contain no-repeat url(../images/image-mockups.png),
+      center -35% / contain no-repeat url(../images/bg-intro-mobile.svg);
   }
 
   .hero-content > p {

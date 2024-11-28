@@ -2,7 +2,7 @@
   header {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   }
-  
+
   .header-container > div:last-child {
     display: block;
   }
@@ -24,11 +24,12 @@
   }
 
   .hero-container {
+    padding: 500px var(--mgl-px) 100px;
     margin-top: 65px;
   }
 
   .hero-container::after {
-    background: center -23% / contain no-repeat url(./images/image-mockups.png),
-      center -7% / contain no-repeat url(./images/bg-intro-mobile.svg);
+    background: center -23% / contain no-repeat url(../images/image-mockups.png),
+      center -7% / contain no-repeat url(../images/bg-intro-mobile.svg);
   }
 }
