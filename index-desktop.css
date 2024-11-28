@@ -137,7 +137,7 @@ main::after {
   position: absolute;
   top: 0%;
   right: -42%;
-  background: 30% -50px no-repeat url(./images/image-mockups.png), 0% -190px no-repeat url("./images/bg-intro-desktop.svg");
+  background: 30% -50px no-repeat url(./images/image-mockups.png), 0% -190px no-repeat url(./images/bg-intro-desktop.svg);
   /* z-index: -1; */
 }
 
@@ -184,6 +184,7 @@ main::after {
   display: flex;
   padding: 50px 0;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .service-card {
@@ -228,6 +229,7 @@ main::after {
   display: flex;
   padding: 45px 0;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .article-card {
