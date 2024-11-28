@@ -5,17 +5,21 @@ const mobileNavWrapper = document.getElementById("mobile-nav-wrapper")
 
 let mobileNavActive = false
 
-mobileNavToggle.addEventListener("click", (ev) => {
-  if (!mobileNavActive) {
-    navOpenIcon.style.display = "none";
-    navCloseIcon.style.display = "block"
-    mobileNavWrapper.style.display = "block"
-    mobileNavActive = true
-    return
-  }
+function showNav() {
+  navOpenIcon.style.display = "none"
+  navCloseIcon.style.display = "block"
+  mobileNavWrapper.style.display = "block"
+  mobileNavActive = true
+}
 
-  navOpenIcon.style.display = "block";
+function hideNav() {
+  navOpenIcon.style.display = "block"
   navCloseIcon.style.display = "none"
   mobileNavWrapper.style.display = "none"
   mobileNavActive = false
+}
+
+mobileNavToggle.addEventListener("click", (ev) => {
+  if (!mobileNavActive) showNav()
+  else hideNav()
 })
