@@ -14,7 +14,7 @@
     height: 65px;
   }
 
-  .header-nav-desktop,
+  .header-nav,
   .header-cta {
     display: none;
   }
@@ -30,6 +30,28 @@
     height: 100%;
     background: linear-gradient(to bottom, rgba(0,0,0,.7), transparent);
     top: 65px;
+    padding: 20px var(--mgl-px) 0;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    background: var(--bg-color-one);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 12px 0;
+  }
+
+  .mobile-nav > a {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    color: var(--text-color-two);
+    /* font-size: ; */
+  }
+
+  .mobile-nav > a:hover {
+    color: var(--btn-color);
   }
 
   .hero-hd-text {

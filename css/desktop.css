@@ -18,9 +18,9 @@
   --p-font: 1.1rem;
   --big-font: 4rem;
   --h3-font: 1.5rem;
-  --mgl-px: 30px;
+  --mgl-px: 25px;
   --sec-maxw: 1150px;
-  --dgl-px: 25px;
+  --dgl-px: 30px;
 }
 
 html, body {
@@ -62,12 +62,12 @@ header {
   max-height: 20px;
 }
 
-.header-nav-desktop {
+.header-nav {
   display: flex;
   height: 100%;
 }
 
-.header-nav-desktop > a {
+.header-nav > a {
   display: flex;
   color: var(--text-color-one);
   align-items: center;
@@ -77,11 +77,11 @@ header {
   position: relative;
 }
 
-.header-nav-desktop > a:hover {
+.header-nav > a:hover {
   color: var(--text-color-two);
 }
 
-.header-nav-desktop > a::after {
+.header-nav > a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -91,7 +91,7 @@ header {
   opacity: 0;
 }
 
-.header-nav-desktop > a:hover::after {
+.header-nav > a:hover::after {
   opacity: 1;
 }
 
