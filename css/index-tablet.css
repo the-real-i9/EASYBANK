@@ -8,20 +8,35 @@
   }
 
   .hero-container {
-    padding: 700px var(--mgl-px) 100px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    position: relative;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: -150px;
+    padding-bottom: 100px;
   }
 
   .hero-container::before {
-    content: "";
-    position: absolute;
-    /* width: 100%; */
-    /* height: 100%; */
-    top: 0;
+    top: 0%;
     right: 0;
-    background: center top / contain no-repeat url(../images/bg-intro-mobile.svg);
+    background: center/contain no-repeat url(../images/bg-intro-mobile.svg);
+  }
+
+  .hero-content {
+    flex: initial;
+    z-index: 1;
+    margin-top: 20px;
+  }
+  
+  .hero-mock {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 105%;
   }
 
   .hero-content > p {

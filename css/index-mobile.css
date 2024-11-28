@@ -24,16 +24,18 @@
   }
 
   .hero-container {
-    padding: 350px var(--mgl-px) 100px;
+    margin-top: -70px;
+    padding-bottom: 100px;
   }
 
   .hero-container::before {
-    background: center top / contain no-repeat url(../images/image-mockups.png),
-      center top / contain no-repeat url(../images/bg-intro-mobile.svg);
+    top: -13%;
+    right: 0;
+    background: center/contain no-repeat url(../images/bg-intro-mobile.svg);
   }
 
   .hero-hd-text {
-    font-size: 38px;
+    font-size: 35px;
   }
   
   .hero-info-text {
