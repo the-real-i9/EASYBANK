@@ -23,17 +23,6 @@
     display: block;
   }
 
-  .hero-container {
-    margin-top: -70px;
-    padding-bottom: 100px;
-  }
-
-  .hero-container::before {
-    top: -13%;
-    right: 0;
-    background: center/contain no-repeat url(../images/bg-intro-mobile.svg);
-  }
-
   .hero-hd-text {
     font-size: 35px;
   }
@@ -43,5 +32,19 @@
     line-height: 1.6;
     max-width: 400px;
     margin: 20px auto 30px;
+  }
+
+  .services-intro-hd {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .service-card {
+    width: 350px;
+    margin-bottom: 40px;
+  }
+
+  .article-card {
+    width: 400px;
   }
 }
