@@ -92,7 +92,7 @@ main {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  height: 700px;
+  height: 670px;
 }
 
 .hero-content {
@@ -102,6 +102,7 @@ main {
 .hero-mock {
   width: 47%;
   z-index: 1;
+  margin-bottom: -100px;
 }
 
 .hero-container::before {
@@ -109,13 +110,14 @@ main {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: -5%;
-  right: -45%;
+  top: -3%;
+  right: -43%;
   background: center no-repeat url(../images/bg-intro-desktop.svg);
 }
 
 .hero-hd-text {
   font-size: 55px;
+  font-weight: 300;
   max-width: 500px;
   color: var(--text-color-two);
 }
@@ -142,6 +144,7 @@ main {
 
 .services-intro-hd {
   font-size: 50px;
+  font-weight: 300;
   color: var(--text-color-two);
 }
 
@@ -161,7 +164,7 @@ main {
 }
 
 .service-card {
-  width: 250px;
+  width: 245px;
 }
 
 .service-icon {
@@ -170,6 +173,7 @@ main {
 
 .service-title {
   font-size: 25px;
+  font-weight: 300;
   margin-bottom: 20px;
   color: var(--text-color-two);
 }
@@ -195,6 +199,7 @@ main {
 
 .articles-section-title {
   font-size: 40px;
+  font-weight: 300;
   color: var(--text-color-two);
 }
 
@@ -206,7 +211,7 @@ main {
 }
 
 .article-card {
-  width: 255px;
+  width: 270px;
   border-radius: 7px;
   overflow: hidden;
   cursor: pointer;
@@ -235,7 +240,8 @@ main {
 
 .article-title {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300;
   color: var(--text-color-two);
   margin: 14px 0;
 }
