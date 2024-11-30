@@ -82,4 +82,8 @@
   .article-card {
     width: 400px;
   }
+
+  .attribution {
+    font-size: 12px;
+  }
 }
